@@ -1,0 +1,23 @@
+run:
+  timeout: 5m
+  # Don't include test files
+  tests: false
+  modules-download-mode: readonly
+output:
+  format: junit-xml:report.xml,colored-line-number
+  # Sort results by: filepath, line and column.
+  sort-results: false
+linters:
+  # disable-all: true
+  # Enable presets.
+  # https://golangci-lint.run/usage/linters
+  presets:
+    - bugs
+    - error
+    - comment
+  enable:
+    - exportloopref
+  disable:
+    - wrapcheck
+    - scopelint
+    - goerr113
