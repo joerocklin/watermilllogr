@@ -4,7 +4,7 @@ go 1.22.2
 
 require (
 	github.com/ThreeDotsLabs/watermill v1.3.5
-	github.com/go-logr/logr v1.4.1
+	github.com/go-logr/logr v1.4.2
 )
 
 require (
